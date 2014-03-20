@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.253']
 
 
 # Application definition
@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'fts',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -61,7 +62,7 @@ DATABASES = {
 	'NAME' :'test' ,
 	'USER' :'root' ,
 	'PASSWORD' :'root123',
-	'HOST' :'192.168.1.28',
+	'HOST' :'192.168.1.254',
 	'PORT' :'3306'
     }
 }
@@ -71,7 +72,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
